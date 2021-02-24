@@ -8,10 +8,26 @@ public class Main {
         Conta ccWesley = new ContaCorrente("2000", "0020", 0.0, "Wesley");
 
         Conta cpRicardo = new ContaPoupanca("1234", "0030", 0.0, "Ricardo");
-        Conta cpWesley = new ContaPoupanca("2345", "0040", 0.0, "Wesley");
+        ContaPoupanca cpWesley = new ContaPoupanca("2345", "0040", 0.0, "Wesley");
 
         try {
             pularLinha();
+            pularLinha();
+
+            System.out.println(cpWesley);
+
+
+            pularLinha();
+            pularLinha();pularLinha();
+            pularLinha();pularLinha();
+            pularLinha();pularLinha();
+            pularLinha();pularLinha();
+            pularLinha();pularLinha();
+            pularLinha();pularLinha();
+            pularLinha();pularLinha();
+            pularLinha();pularLinha();
+            pularLinha();pularLinha();
+            pularLinha();pularLinha();
             pularLinha();
 
             // Mostrando as contas corrente
