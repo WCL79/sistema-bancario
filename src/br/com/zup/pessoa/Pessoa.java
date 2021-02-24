@@ -5,10 +5,13 @@ public class Pessoa {
     private String nome, sobrenome, dataNascimento;
     private String CPF;
 
-    public Pessoa(String nome, String sobrenome, String dataNascimento) {
+    public Pessoa() {}
+
+    public Pessoa(String nome, String sobrenome, String dataNascimento, String CPF) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.dataNascimento = dataNascimento;
+        this.CPF = CPF;
     }
 
     public String getNome() {

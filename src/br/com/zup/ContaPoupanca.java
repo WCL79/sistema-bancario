@@ -6,8 +6,11 @@ import java.util.Calendar;
 
 public class ContaPoupanca extends Conta implements Transacao{
     private int diaRendimento;
-    public ContaPoupanca(String numero, String agencia, double saldo, Pessoa pessoa) {
+    private double taxaRendimento;
+
+    public ContaPoupanca(String numero, String agencia, double saldo, Pessoa pessoa, double taxaRendimento) {
         super(numero, agencia, saldo, pessoa);
+        this.taxaRendimento = taxaRendimento;
     }
 
     @Override
@@ -24,7 +27,7 @@ public class ContaPoupanca extends Conta implements Transacao{
         this.diaRendimento = diaRendimento;
     }
 
-    public boolean calcularNovoSaldo(double taxaRendimento){
+    public boolean calcularRendimento(double taxaRendimento){
 
         Calendar hoje = Calendar.getInstance();
         diaRendimento = 24;
