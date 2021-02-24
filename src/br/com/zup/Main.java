@@ -1,14 +1,18 @@
 package br.com.zup;
 
+import br.com.zup.pessoa.Pessoa;
+
 public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        Conta ccRicardo = new ContaCorrente("1000", "0010", 0.0, "Ricardo");
-        Conta ccWesley = new ContaCorrente("2000", "0020", 0.0, "Wesley");
+        Pessoa ricardo = new Pessoa("Ricardo", "Alcantara Silva", "22/02/1984");
+        Pessoa wesley = new Pessoa("Wesley", "Lima", "17/05/1979");
+        Conta ccRicardo = new ContaCorrente("1000", "0010", 0.0, ricardo);
+        Conta ccWesley = new ContaCorrente("2000", "0020", 0.0, wesley);
 
-        Conta cpRicardo = new ContaPoupanca("1234", "0030", 0.0, "Ricardo");
-        ContaPoupanca cpWesley = new ContaPoupanca("2345", "0040", 0.0, "Wesley");
+        Conta cpRicardo = new ContaPoupanca("1234", "0030", 0.0, ricardo);
+        ContaPoupanca cpWesley = new ContaPoupanca("2345", "0040", 0.0, wesley);
 
         try {
             pularLinha();

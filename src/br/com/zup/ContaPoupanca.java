@@ -1,11 +1,13 @@
 package br.com.zup;
 
+import br.com.zup.pessoa.Pessoa;
+
 import java.util.Calendar;
 
 public class ContaPoupanca extends Conta implements Transacao{
     private int diaRendimento;
-    public ContaPoupanca(String numero, String agencia, double saldo, String nome) {
-        super(numero, agencia, saldo, nome);
+    public ContaPoupanca(String numero, String agencia, double saldo, Pessoa pessoa) {
+        super(numero, agencia, saldo, pessoa);
     }
 
     @Override

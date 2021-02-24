@@ -3,6 +3,7 @@ package br.com.zup.pessoa;
 public class Pessoa {
 
     private String nome, sobrenome, dataNascimento;
+    private String CPF;
 
     public Pessoa(String nome, String sobrenome, String dataNascimento) {
         this.nome = nome;
@@ -32,5 +33,21 @@ public class Pessoa {
 
     public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
+    }
+
+    public String getCPF() {
+        return CPF;
+    }
+
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa" +
+                "Nome: " + nome +
+                "Sobrenome: " + sobrenome +
+                "DataNascimento: " + dataNascimento;
     }
 }

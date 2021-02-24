@@ -1,14 +1,17 @@
 package br.com.zup;
 
+import br.com.zup.pessoa.Pessoa;
+
 public class Conta implements Transacao {
     private double saldo;
-    private String numero, agencia, nome;
+    private String numero, agencia;
+    private Pessoa pessoa;
 
-    public Conta(String numero, String agencia, double saldo, String nome) {
+    public Conta(String numero, String agencia, double saldo, Pessoa pessoa) {
         this.numero = numero;
         this.agencia = agencia;
         this.saldo = saldo;
-        this.nome = nome;
+        this.pessoa = pessoa;
     }
 
     public String getNumero() {
@@ -35,12 +38,12 @@ public class Conta implements Transacao {
         this.saldo += saldo;
     }
 
-    public String getNome() {
-        return nome;
+    public Pessoa getNome() {
+        return pessoa;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(Pessoa nome) {
+        this.pessoa = pessoa;
     }
 
     @Override

@@ -1,9 +1,11 @@
 package br.com.zup;
 
+import br.com.zup.pessoa.Pessoa;
+
 public class ContaCorrente extends Conta implements Transacao{
 
-    public ContaCorrente(String numero, String agencia, double saldo, String nome) {
-        super(numero, agencia, saldo, nome);
+    public ContaCorrente(String numero, String agencia, double saldo, Pessoa pessoa) {
+        super(numero, agencia, saldo, pessoa);
     }
 
     @Override
