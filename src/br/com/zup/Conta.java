@@ -93,15 +93,6 @@ public class Conta implements Transacao {
         }
     }
 
-    /*public void cadastrarContaCorrente(String numero, String agencia, double saldo, Pessoa pessoa) {
-        Conta conta = new ContaCorrente(numero, agencia, saldo, pessoa);
-    }
-
-    public void cadastrarContaPoupanca(String numero, String agencia, double saldo, Pessoa pessoa, double taxaRendimento) {
-        ContaPoupanca conta = new ContaPoupanca(numero, agencia, saldo, pessoa, taxaRendimento);
-        conta.calcularRendimento(taxaRendimento);
-    }*/
-
     @Override
     public String toString() {
         return    "\nnome: " + getNome()
