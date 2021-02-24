@@ -6,22 +6,8 @@ public class ContaPoupanca extends Conta implements Transacao{
     }
 
     @Override
-    public void depositarNaConta(double valorADepositar) {
-
-    }
-
-    @Override
-    public boolean sacarDaConta(double valorASacar) throws Exception {
-        return false;
-    }
-
-    @Override
-    public boolean transferirParaOutraConta(double valorATransferir, Conta conta) throws Exception {
-        return false;
-    }
-
-    @Override
-    public void consultarSaldo() {
-
+    public String toString() {
+        return "-- Conta Poupança --"
+                +super.toString();
     }
 }
