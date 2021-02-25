@@ -10,6 +10,8 @@ public class Funcionario extends Pessoa{
     private String cargo;
     private boolean acessoTotal;
 
+    public Funcionario() {}
+
     public Funcionario(String nome, String sobrenome, String dataNascimento, String CPF, String cargo) {
         super(nome, sobrenome, dataNascimento, CPF);
         this.cargo = cargo;
